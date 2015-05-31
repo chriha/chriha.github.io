@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>christopher hartmann - web developer - chriha.de</title>
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="Public" />
+    <meta name="description" content="Christopher Hartmann, ein Web-Entwickler aus Hessen ..." />
+    <meta name="keywords" content="christopher, hartmann, web entwickler, entwickler, web developer, developer, chriha" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+
+<div id="top" class="wrapper">
+
+    <section>
+        <article>
+            <header>
+                <h1>{ch} christopher hartmann</h1>
+                <div class="title">web developer</div>
+                <div class="clear"></div>
+            </header>
+            <div id="content">
+                <h2>Referenzen</h2>
+                <p>
+                    <span class="year">09.2007 - 10.2011</span>SOFTAGE Services GmbH<br />
+                    <span class="year">11.2011 - 07.2012</span>dress for less GmbH (<a href="http://www.kolibrishop.com" target="_blank">Kolibrishop</a>)<br />
+                </p>
+                <p>
+                    <span class="year">04.2012 - 05.2012</span><a href="http://www.peoplesplace.de" target="_blank">Peoplesplace GmbH</a><br />
+                    <span class="year">06.2012 - 07.2012</span>Intune GmbH (<a href="http://www.rockamora.de" target="_blank">Rockamora</a>)<br />
+                    <span class="year">03.2013 - 07.2013</span><a href="http://www.deanbrando.de" target="_blank">Dean &amp; Brando GmbH &amp; Co KG</a><br />
+                    <span class="year">04.2013 - 10.2013</span><a href="http://www.axel-froehlich.com" target="_blank">Axel Fröhlich GmbH</a><br />
+                    <span class="year">08.2012 - heute</span><a href="http://www.aikme.de" target="_blank">aikme GmbH</a><br />
+                    <span class="year">09.2014 - heute</span><a href="http://www.lazu.io" target="_blank">lazu</a><br />
+                </p>
+                <h3>Entwicklung</h3>
+                <p>
+                    PHP, MySQL, JavaScript, HTML5, CSS3, XML, XSLT, Shell Script (Bash), Python, <small>ASP (VBScript) / ASP.NET, C#, VB / VB.NET, T-SQL</small>
+                </p>
+                <h3>Frameworks, Technologien &amp; Systeme</h3>
+                <p>
+                    jQuery, Laravel, Bootstrap, Ajax, Smarty, Sass, Gulp, OXID eShops, Wordpress, Git, Mac, Linux, Windows
+                </p>
+                <h3>Sonstiges</h3>
+                <p>
+                    OOP, SEO, Scrum, GitHub, eCommerce, Jira
+                </p>
+            </div>
+            <footer>
+                <div class="show-info"><a href="#" title="Klick mich!" data-text="Zeig' weniger!">Zeig' mehr!</a></div>
+                <div class="mail">hello{at}chriha{dot}de <small>(<a href="https://github.com/chriha/">GitHub</a> | <a href="https://gist.github.com/chriha">Gist</a> | <a href="http://www.lazu.io/">lazu</a> | <a href="/hello.asc">PGP key</a>)</small></div>
+            </footer>
+        </article>
+    </section>
+
+    <div class="clear"></div>
+
+</div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.show-info').on('click', function(e){
+            var oLink = $(this).children();
+            e.preventDefault();
+            $('#content').slideToggle(500, function(){
+                var sText = oLink.html();
+                oLink.html( oLink.attr('data-text') ).attr('data-text', sText);
+            });
+            return false;
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1188464-6']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html>

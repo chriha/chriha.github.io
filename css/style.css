@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'ChaparralPro-Regular';
+    src: url('typo/chaparralproregular.eot');
+    src: url('typo/chaparralproregular.eot?#iefix') format('embedded-opentype'),
+         url('typo/chaparralproregular.woff') format('woff'),
+         url('typo/chaparralproregular.ttf') format('truetype'),
+         url('typo/chaparralproregular.svg#chaparralproregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('typo/opensans-light.eot');
+    src: url('typo/opensans-light.eot?#iefix') format('embedded-opentype'),
+         url('typo/opensans-light.woff') format('woff'),
+         url('typo/opensans-light.ttf') format('truetype'),
+         url('typo/opensans-light.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* reset browser defaults **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+nav ul, nav li {
+    margin: 0;
+}
+nav ul, ul {
+    list-style: none;
+}
+/** reset browser defaults */
+
+
+
+::selection,
+::-moz-selection {
+    background: #4B8FFA;
+    color: #fff;
+}
+
+/* #687F75 #272822 #D9BFA0 #D97855 #A1321E */
+
+body {
+    color: #242222;
+    /*font-size: 110%;
+    font-family: "chaparral-pro", serif;
+    font-style: normal;
+    font-weight: 400;*/
+    background: #f8f8f8 url('../img/bg.png');
+    font-family: 'ChaparralPro-Regular', Georgia, serif;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans','Arial Narrow', serif;
+    font-weight: 100;
+}
+
+h1 {
+    float: left;
+    font-size: 140%;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 110%;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #009cdd;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #009cdd;
+    color: #242222;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+p {
+    line-height: 140%;
+}
+
+small {
+    font-size: 80%;
+}
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/* Frame *****************************/
+.wrapper {
+    margin: 40px auto 30px;
+    width: 600px;
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        min-width: 560px;
+        width: 90%;
+    }
+}
+
+header, section {
+    max-width: 700px;
+    width: 90%;
+}
+
+header {
+    border-bottom: 1px solid #009cdd;
+    color: #009cdd;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+header .title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 16px;
+}
+
+section {
+    margin: 60px auto 0 auto;
+    padding: 20px 0;
+}
+
+#content {
+    border-bottom: 1px solid #009cdd;
+    display: none;
+    padding: 10px;
+}
+
+#content p + h3 {
+    margin-top: 14px;
+}
+
+.year {
+    display: inline-block;
+    min-width: 140px;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+.show-info {
+    float: left;
+    margin-top: 14px;
+}
+
+.mail {
+    float: right;
+    margin-top: 14px;
+}
