@@ -32,7 +32,8 @@
                     <span class="year">03.2013 - 07.2013</span><a href="http://www.deanbrando.de" target="_blank">Dean &amp; Brando GmbH &amp; Co KG</a><br />
                     <span class="year">04.2013 - 10.2013</span><a href="http://www.axel-froehlich.com" target="_blank">Axel Fröhlich GmbH</a><br />
                     <span class="year">08.2012 - 01.2016</span><a href="http://www.aikme.de" target="_blank">aikme GmbH</a><br />
-                    <span class="year">01.2016 - heute</span><a href="http://www.datapath.io" target="_blank">datapath.io GmbH</a><br />
+                    <span class="year">01.2016 - 10.2016</span><a href="http://www.datapath.io" target="_blank">datapath.io GmbH</a><br />
+                    <span class="year">11.2016 - heute</span><a href="http://www.s-v.de" target="_blank">SCHOLZ & VOLKMER GmbH</a><br />
                 </p>
             </div>
             <footer>
@@ -51,11 +52,11 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.show-info').on('click', function(e){
-            var oLink = $(this).children();
+            var link = $(this).children();
             e.preventDefault();
             $('#content').slideToggle(500, function(){
-                var sText = oLink.html();
-                oLink.html( oLink.attr('data-text') ).attr('data-text', sText);
+                var text = link.html();
+                link.html( link.attr('data-text') ).attr('data-text', text);
             });
             return false;
         });
