@@ -3,7 +3,7 @@ layout: post
 date: 2023-07-24 14:00:00 +0200
 title: "Optimizing Laravel Application Performance"
 categories: [Development]
-tags: [php, development, laravel, caching, database]
+tags: [php, development, laravel, cache, database]
 image: /assets/img/posts/laravel-performance.png
 ---
 
