@@ -4,7 +4,7 @@ date: 2024-01-17 14:00:00 +0200
 title: "Improving Code Quality with PHPCS, PHPStan, and Laravel Pint"
 categories: [Development]
 tags: [php, development, laravel, code quality, static analysis]
-image: /assets/img/posts/laravel-performance.png
+image: /assets/img/posts/laravel-elegant-code.png
 ---
 
 ![Improving Code Quality](/path/to/code_quality.jpg)

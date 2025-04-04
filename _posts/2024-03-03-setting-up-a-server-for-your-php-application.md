@@ -4,7 +4,7 @@ date: 2024-03-03 14:00:00 +0200
 title: "Setting up a server for your PHP application"
 categories: [Development]
 tags: [php, admin, server, ngnix, sqlite, fail2ban, laravel, octane, fpm]
-image: /assets/img/posts/laravel-performance.png
+image: /assets/img/posts/server-setup.jpg
 ---
 
 ![Improving Code Quality](/path/to/code_quality.jpg)
