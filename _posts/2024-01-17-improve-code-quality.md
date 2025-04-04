@@ -7,15 +7,13 @@ tags: [php, development, laravel, code quality, static analysis]
 image: /assets/img/posts/laravel-elegant-code.png
 ---
 
-![Improving Code Quality](/path/to/code_quality.jpg)
-
 ## Improving Code Quality with PHPCS, PHPStan, and Laravel Pint
 
 Ensuring the quality of your code is paramount in maintaining a robust and scalable Laravel application. Tools like PHP CodeSniffer (PHPCS), PHPStan (Larastan), and Laravel Pint can help you enforce coding standards, perform static analysis, and automatically format your code. In this blog post, we will explore how to set up and use these tools to improve the quality of your Laravel projects.
 
 ### PHP CodeSniffer (PHPCS) and PHPCBF
 
-PHP CodeSniffer (PHPCS) is a tool that detects violations of a defined coding standard. PHPCBF (PHP Code Beautifier and Fixer) is a companion tool that automatically fixes these violations.
+[PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) (PHPCS) is a tool that detects violations of a defined coding standard. PHPCBF (PHP Code Beautifier and Fixer) is a companion tool that automatically fixes these violations.
 
 #### Installing PHPCS
 
@@ -56,6 +54,10 @@ In some cases, depending on the rule, PHP CS is able to automatically fix coding
 ./vendor/bin/phpcbf
 ```
 
+#### Additional Sniffs
+
+If you'd like to use additional sniffs, [slevomat/coding-standard](https://github.com/slevomat/coding-standard) is a popular choice.
+
 
 ### PHPStan and Larastan
 
@@ -94,6 +96,15 @@ You can run PHPStan using the following command:
 ./vendor/bin/phpstan analyse [--memory-limit=1G]
 ```
 
+#### Using a baseline
+
+If you're introducing PHPStan to an existing project and you encounter thousands of errors, rather than solving all of them in one go, you can generate a baseline file to ignore existing errors and solve them over time:
+
+```bash
+./vendor/bin/phpstan analyse --generate-baseline
+```
+
+
 ### Laravel Pint
 
 Laravel Pint is a zero-dependency code style fixer for PHP, created to work seamlessly with Laravel.
@@ -124,6 +135,10 @@ Create a `pint.json` configuration file in the root of your project:
 #### Running Laravel Pint
 
 To automatically fix coding style issues, run:
+
+```bash
+./vendor/bin/pint
+```
 
 ## Conclusion
 

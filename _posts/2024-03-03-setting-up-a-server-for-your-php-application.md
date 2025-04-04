@@ -7,8 +7,6 @@ tags: [php, admin, server, ngnix, sqlite, fail2ban, laravel, octane, fpm]
 image: /assets/img/posts/server-setup.jpg
 ---
 
-![Improving Code Quality](/path/to/code_quality.jpg)
-
 In this part, we'll discover how to set up a server for your PHP application. We will use a minimal setup with the current version of PHP, Nginx, and SQLite. We will also see how to configure the server to run a Laravel application.
 
 Keep in mind, this guide is for educational purposes and should not be used in a production environment without proper security measures. While we will cover some basic security configurations, it's essential to consult with a security expert to ensure your server is secure.
